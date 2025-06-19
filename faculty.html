@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduPulse | Faculty Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="faculty-page">
+  <header class="dashboard-header">
+    <h2>👨‍🏫 Welcome, Faculty</h2>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+  </header>
+
+  <main class="dashboard-content">
+    <!-- Search Student -->
+    <section class="card">
+      <h3>Search Student by Reg. Number</h3>
+      <input type="text" placeholder="Enter registration number">
+      <button>Search</button>
+    </section>
+
+    <!-- Add Course -->
+    <section class="card">
+      <h3>Add New Course</h3>
+      <form id="addCourseForm">
+        <input type="text" placeholder="Course Name" required>
+        <input type="text" placeholder="Course Code" required>
+        <button type="submit">Add Course</button>
+      </form>
+    </section>
+
+    <!-- View Courses -->
+    <section class="card">
+      <h3>My Courses</h3>
+      <ul class="feedback-list">
+        <li><strong>CS301</strong> - Computer Networks</li>
+        <li><strong>CS302</strong> - Data Structures</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

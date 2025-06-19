@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduPulse | Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h1 class="app-title">🎓 EduPulse</h1>
+    <p class="app-subtitle">Student Feedback System</p>
+
+    <div class="role-select">
+      <label><input type="radio" name="role" value="student" checked> Student</label>
+      <label><input type="radio" name="role" value="faculty"> Faculty</label>
+    </div>
+
+    <form id="loginForm">
+      <input type="email" placeholder="Enter your email" required>
+      <input type="password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+      <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+    </form>
+  </div>
+</body>
+</html>

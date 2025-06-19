@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduPulse | Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="student-page">
+  <header class="dashboard-header">
+    <h2>🎓 Welcome, Student</h2>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+  </header>
+
+  <main class="dashboard-content">
+    <!-- Faculty Selection -->
+    <section class="card">
+      <h3>Select Faculty</h3>
+      <select id="facultySelect">
+        <option disabled selected>Select a Faculty</option>
+        <option value="Dr. Aarthi">Dr. Aarthi - Computer Networks</option>
+        <option value="Prof. Kiran">Prof. Kiran - Data Structures</option>
+        <option value="Dr. Meena">Dr. Meena - Operating Systems</option>
+      </select>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="card">
+      <h3>Submit Feedback</h3>
+      <form id="feedbackForm">
+        <label>Rating:
+          <select required>
+            <option disabled selected>Select rating</option>
+            <option>⭐⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐</option>
+          </select>
+        </label><br><br>
+        <textarea placeholder="Enter your feedback..." rows="4" required></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Feedback History -->
+    <section class="card">
+      <h3>Your Past Feedback</h3>
+      <ul class="feedback-list">
+        <li><strong>To:</strong> Dr. Aarthi | ⭐⭐⭐⭐ | “Great teaching style”</li>
+        <li><strong>To:</strong> Prof. Kiran | ⭐⭐⭐ | “Needs more examples”</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
